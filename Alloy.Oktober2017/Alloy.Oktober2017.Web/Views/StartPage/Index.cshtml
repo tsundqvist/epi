@@ -1,0 +1,4 @@
+@using Alloy.Oktober2017.Web
+@model PageViewModel<Alloy.Oktober2017.Web.Models.Pages.StartPage>
+
+@Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row equal-height", tag = Global.ContentAreaTags.FullWidth })
