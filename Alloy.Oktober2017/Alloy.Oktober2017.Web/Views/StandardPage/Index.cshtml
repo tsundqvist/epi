@@ -3,6 +3,9 @@
 
 @{ Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml"; }
 
+Name:
+@Html.PropertyFor(x => x.CurrentPage.Name)
+
 <h1 @Html.EditAttributes(x => x.CurrentPage.PageName)>@Model.CurrentPage.PageName</h1>
 <p class="introduction" @Html.EditAttributes(x => x.CurrentPage.MetaDescription)>@Model.CurrentPage.MetaDescription</p>
 <div class="row">

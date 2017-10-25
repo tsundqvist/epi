@@ -69,6 +69,7 @@ namespace Alloy.Oktober2017.Web.Models.Blocks
         [Display(
             GroupName = SystemTabNames.Content,
             Order = 8)]
+		// This doesn not work[DefaultValue(true)]
         public virtual bool Recursive { get; set; }
 
         #region IInitializableContent

@@ -13,7 +13,7 @@ namespace Alloy.Oktober2017.Web.Models.ViewModels
         public bool HideFooter { get; set; }
         public LinkItemCollection ProductPages { get; set; }
         public LinkItemCollection CompanyInformationPages { get; set; }
-        public LinkItemCollection NewsPages { get; set; }
+        public LinkItemCollection NewsPageLinks { get; set; }
         public LinkItemCollection CustomerZonePages { get; set; }
         public bool LoggedIn { get; set; }
         public MvcHtmlString LoginUrl { get; set; }

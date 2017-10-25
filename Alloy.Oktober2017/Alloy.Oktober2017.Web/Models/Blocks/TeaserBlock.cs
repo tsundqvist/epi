@@ -40,5 +40,10 @@ namespace Alloy.Oktober2017.Web.Models.Blocks
             GroupName = SystemTabNames.Content,
             Order = 4)]
         public virtual PageReference Link { get; set; }
+
+	    public override void SetDefaultValues(ContentType contentType)
+	    {
+		    base.SetDefaultValues(contentType);
+	    }
     }
 }

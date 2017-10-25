@@ -45,7 +45,7 @@ namespace Alloy.Oktober2017.Web.Business
                     LogotypeLinkUrl = new MvcHtmlString(_urlResolver.GetUrl(SiteDefinition.Current.StartPage)),
                     ProductPages = startPage.ProductPageLinks,
                     CompanyInformationPages = startPage.CompanyInformationPageLinks,
-                    NewsPages = startPage.NewsPageLinks,
+                    NewsPageLinks = startPage.NewsPageLinks,
                     CustomerZonePages = startPage.CustomerZonePageLinks,
                     LoggedIn = requestContext.HttpContext.User.Identity.IsAuthenticated,
                     LoginUrl = new MvcHtmlString(GetLoginUrl(currentContentLink)),

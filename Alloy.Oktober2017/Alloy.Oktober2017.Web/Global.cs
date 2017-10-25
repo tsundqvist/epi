@@ -4,8 +4,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Alloy.Oktober2017.Web
 {
+	using EPiServer.Security;
 
-    public class Global
+	public class Global
     {
         public static readonly string LoginPath = "/util/login.aspx";
         public static readonly string AppRelativeLoginPath = string.Format("~{0}", LoginPath);
@@ -17,7 +18,9 @@ namespace Alloy.Oktober2017.Web
         public static class GroupNames
         {
             [Display(Name = "Contact", Order = 1)]
-            public const string Contact = "Contact";
+            [RequiredAccess(AccessLevel.Administer)]
+
+			public const string Contact = "Contact";
 
             [Display(Name = "Default", Order = 2)]
             public const string Default = "Default";

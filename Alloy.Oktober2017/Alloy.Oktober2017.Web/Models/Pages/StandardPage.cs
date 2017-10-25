@@ -22,5 +22,11 @@ namespace Alloy.Oktober2017.Web.Models.Pages
             GroupName = SystemTabNames.Content,
             Order = 320)]
         public virtual ContentArea MainContentArea { get; set; }
+
+	    [Display(
+		    GroupName = SystemTabNames.PageHeader,
+		    Order = 320)]
+		[StringLength(4)]
+	    public virtual string MySring { get; set; }
     }
 }
