@@ -65,7 +65,8 @@ namespace Alloy.Oktober2017.Web.Controllers
         /// Uses EPiServer Search. For more advanced search functionality such as keyword highlighting,
         /// facets and search statistics consider using EPiServer Find.
         /// </remarks>
-        private IEnumerable<SearchContentModel.SearchHit> Search(string searchText, IEnumerable<ContentReference> searchRoots, HttpContextBase context, string languageBranch)
+        private IEnumerable<SearchContentModel.SearchHit> Search(string searchText, 
+			IEnumerable<ContentReference> searchRoots, HttpContextBase context, string languageBranch)
         {
             var searchResults = _searchService.Search(searchText, searchRoots, context, languageBranch, MaxResults);
 
